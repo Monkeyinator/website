@@ -1,3 +1,5 @@
+// npm run sass // To compile from scss to css
+
 @import 'config';
 @import 'menu';
 
@@ -32,7 +34,7 @@ h1, h2, h3 {
 }
 
 a {
-  color: #fff;
+  color: #2196f3;
   text-decoration: none;
 }
 
@@ -71,62 +73,38 @@ main {
   }
 }
 
-.about-info {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-areas:
-    'bioimage bio bio'
-    'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr);
-
-  .bio-image {
-    width: 250px;
-    height: 250px;
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: $secondary-color 3px solid;
-  }
-  
-  .bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-  }
-  
-  .job-1 {
-    grid-area: job1;
-  }
-  
-  .job-2 {
-    grid-area: job2;
-  }
-  
-  .job-3 {
-    grid-area: job3;
-  }
-  
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
-  }  
-}
-
 // Work/Projects
 .projects {
+  width: 250px;
+  margin: auto;
   display: grid;
+  text-align: center;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
-    width: 100%;
-    border: 3px #fff solid;
+    width: 250px;
+    height: 250px;
 
     &:hover {
       opacity: 0.5;
       border-color: $secondary-color;
       @include easeOut;
     }
+  }
+}
+
+// Work/Projects/Bingocreator
+.bingocreator-projects {
+  width: 65%;
+  margin: auto;
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(4, 1fr);
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -139,21 +117,9 @@ main {
   margin-top: 1rem;
 
   div {
-    font-size: 2rem;
     border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    @include easeOut;
-
-    &:hover {
-      padding: 0.5rem 1.5rem;
-      background: $secondary-color;
-      color: set-text-color($secondary-color);
-
-      span  {
-        color: set-text-color($secondary-color);
-      }
-    }
   }
 }
 
@@ -168,12 +134,6 @@ main {
     background: $secondary-color;
     color: set-text-color($secondary-color);
   }
-}
-
-.btn-light {
-  @extend .btn;
-  background: lighten($primary-color, 50);
-  color: #fff;
 }
 
 .btn-dark {
