@@ -11,7 +11,7 @@
   "author": "Tim Lindner",
   "license": "MIT",
   "dependencies": {
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^7.0.1"
   }
 }
