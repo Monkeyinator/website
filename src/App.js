@@ -22,11 +22,11 @@ function App() {
       <Routes>
         <Route path="/" element={<MainView />} />
         <Route path="website" element={<MainView />} />
-        <Route path="projects/bingocreator/privacy-policy" element={<BingoCreatorPrivacyPolicyView />} />
-        <Route path="work/bingocreator/privacy" element={<RedirectToBingoCreatorPrivacyPolicyView />} />
-        <Route path="projects/contractreminder/privacy-policy" element={<ContractReminderPrivacyPolicyView />} />
-        <Route path="work/contractreminder/privacy" element={<RedirectToContractReminderPrivacyPolicyView />} />
-        <Route path="licenses" element={<LicensesView />} />
+        <Route path="website/projects/bingocreator/privacy-policy" element={<BingoCreatorPrivacyPolicyView />} />
+        <Route path="website/work/bingocreator/privacy" element={<RedirectToBingoCreatorPrivacyPolicyView />} />
+        <Route path="website/projects/contractreminder/privacy-policy" element={<ContractReminderPrivacyPolicyView />} />
+        <Route path="website/work/contractreminder/privacy" element={<RedirectToContractReminderPrivacyPolicyView />} />
+        <Route path="website/licenses" element={<LicensesView />} />
       </Routes>
     </BrowserRouter>
   );
