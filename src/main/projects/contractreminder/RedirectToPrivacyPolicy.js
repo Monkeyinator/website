@@ -5,7 +5,7 @@ function RedirectToContractReminderPrivacyPolicy() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate('/website/projects/contractreminder/privacy-policy');
+    navigate('/projects/contractreminder/privacy-policy');
   });
 
   return null;

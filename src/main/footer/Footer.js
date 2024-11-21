@@ -6,7 +6,7 @@ function Footer() {
   const navigate = useNavigate();
 
   function handleLicensesButtonClick() {
-    navigate('/website/licenses');
+    navigate('/licenses');
   }
 
   return (

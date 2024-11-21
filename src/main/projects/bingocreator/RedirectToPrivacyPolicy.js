@@ -5,7 +5,7 @@ function RedirectToBingoCreatorPrivacyPolicy() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    navigate('/website/projects/bingocreator/privacy-policy');
+    navigate('/projects/bingocreator/privacy-policy');
   });
 
   return null;
