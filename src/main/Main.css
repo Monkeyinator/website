@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap);
+
+*,
+*::before,
+*::after {
+  /* Box Model */
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+  /* Box Model */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* Typography */
+  font-size: 62.5%;
+}
+
+@media (max-width: 1500px) {
+  html {
+    /* Typography */
+    font-size: 57.25%;
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    /* Typography */
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 770px) {
+  html {
+    /* Typography */
+    font-size: 43.75%;
+  }
+}
+
+@media (max-width: 615px) {
+  html {
+    /* Typography */
+    font-size: 40%;
+  }
+}
+
+@media (max-width: 350px) {
+  html {
+    /* Typography */
+    font-size: 35%;
+  }
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  /* Background */
+  background-color: #0e0d0d;
+  /* Typography */
+  color: #fafafa;
+  font-family: montserrat, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  /* Typography */
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  /* Position and Layout */
+  outline: none;
+  /* Box Model */
+  border: none;
+  /* Background */
+  background-color: transparent;
+  /* Typography */
+  color: inherit;
+}
+
+.canvas {
+  /* Position and Layout */
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* Box Model */
+  height: 100vh;
+  width: 100%;
+  /* Background */
+  background-color: #0e0d0d;
+}
+
+.main-bg {
+  /* Position and Layout */
+  position: fixed;
+  top: 0;
+  /* Box Model */
+  height: 100vh;
+  width: 100%;
+}
+
+.navigation {
+  /* Display and Visibility */
+  display: flex;
+  /* Box Model */
+  margin-right: 10rem;
+  /* Typography */
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    /* Box Model */
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navigation {
+    /* Box Model */
+    margin-right: 0;
+  }
+}
+
+.section-heading {
+  /* Position and Layout */
+  position: relative;
+  z-index: 9999;
+  /* Box Model */
+  margin-bottom: 13rem;
+  margin-top: 9rem;
+  /* Typography */
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  .section-heading {
+    /* Box Model */
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section-heading {
+    /* Box Model */
+    margin-top: 6rem;
+  }
+}

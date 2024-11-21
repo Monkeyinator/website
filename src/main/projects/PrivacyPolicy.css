@@ -1,0 +1,157 @@
+.privacy-policy {
+  /* Position and Layout */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  /* Display and Visibility */
+  display: flex;
+  /* Box Model */ 
+  margin-bottom: 10rem;
+}
+
+.privacy-policy__heading:before {
+  /* Generated Content */
+  content: ''; 
+  /* Position and Layout */
+  left: 5.5rem;
+  position: relative;
+  top: 6.3rem;
+  z-index: -1;
+  /* Display and Visibility */
+  display: block;
+  /* Box Model */ 
+  border-bottom: 9px solid #39E0CF;
+  margin: 0 auto;
+  width: 33.5rem;
+}
+
+@media (max-width: 770px) {
+  .privacy-policy__heading:before {
+    /* Box Model */
+    border-bottom: 6px solid #39E0CF;
+  }
+}
+
+.privacy-policy__section-heading {
+  /* Position and Layout */
+  position: relative;
+  z-index: 9999;
+  /* Box Model */ 
+  margin-top: 9rem;
+  margin-bottom: 6rem;
+  /* Typography */
+  font-size: 5.5rem;
+  font-weight: 700;
+}
+
+.policy__title {
+  /* Position and Layout */
+  position: relative;
+  /* Box Model */ 
+  margin-top: 6rem;
+  z-index: 66;
+  /* Typography */
+  font-size: 3.5rem;
+}
+
+@media (max-width: 900px) {
+  .policy__title {
+    /* Typography */
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .policy__title {
+    /* Typography */
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .policy__title {
+    /* Typography */
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .policy__title {
+    /* Typography */
+    font-size: 2.2rem;
+  }
+}
+
+.policy__description {
+  /* Position and Layout */
+  position: relative;
+  /* Box Model */ 
+  margin-top: 3rem;
+  z-index: 999909999;
+  /* Typography */
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .policy__description {
+    /* Box Model */ 
+    margin-top: 2rem;
+  }
+}
+
+.policy__button {
+  /* Position and Layout */
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* Display and Visibility */
+  display: inline-flex;  
+  /* Box Model */
+  padding: 1rem 1.2rem;
+  width: fit-content;
+  /* Background */
+  cursor: pointer;
+  /* Typography */
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+@media (max-width: 560px) {
+  .policy__button {
+    /* Box Model */ 
+    margin-top: 2rem;
+  }
+}
+
+.policy__button:after {
+  /* Generated Content */
+  content: '';
+  /* Position and Layout */
+  bottom: 1px;
+  position: absolute;
+  z-index: -1;
+  /* Display and Visibility */
+  display: block;
+  transform-origin: bottom;
+  /* Box Model */
+  height: 2px;
+  width: 100%;
+  /* Background */
+  background-color: #39E0CF;
+  /* Animation */
+  transition: all 0.25s;
+}
+
+.policy__button:hover {
+  /* Typography */
+  color: #0e0d0d;
+}
+
+.policy__button:hover:after {
+  /* Box Model */
+  height: 100%;
+}
