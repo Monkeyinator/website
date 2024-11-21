@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.58a8c907.css",
+    "main.js": "/website/static/js/main.87e24dae.js",
+    "static/media/bingocreator.png": "/website/static/media/bingocreator.e09b0ae1e1e12c1101dd.png",
+    "static/media/contractreminder.png": "/website/static/media/contractreminder.4263abfa9346eeb40087.png",
+    "index.html": "/website/index.html",
+    "main.58a8c907.css.map": "/website/static/css/main.58a8c907.css.map",
+    "main.87e24dae.js.map": "/website/static/js/main.87e24dae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58a8c907.css",
+    "static/js/main.87e24dae.js"
+  ]
+}
