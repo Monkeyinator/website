@@ -25,10 +25,10 @@
   },
   "scripts": {
     "dep:gen": "license-checker --production --json --customPath license-checker-custom-format.json --out src/licenses.json",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "npm run dep:gen && npm run build",
+    "deploy": "npm run dep:gen && gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run dep:gen && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
