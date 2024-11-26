@@ -13,6 +13,8 @@ import LicensesView from './main/footer/licenses/Licenses.js';
 
 function App() {
   useEffect(() => {
+    i18n.init({ fallbackLng: "en", });
+
     const locale = RNLocalize.getLocales()[0].languageCode;
     i18n.changeLanguage(locale);
   }, []);
