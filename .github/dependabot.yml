@@ -1,13 +1,13 @@
 version: 2
 updates:
-  - package-ecosystem: "github-actions"
+  - package-ecosystem: npm
     directory: "/"
     schedule:
-      interval: "weekly"
-    groups:
-      all-github-actions:
-        patterns: ["*"]
-    reviewers:
-      - "monkeyinator"
-    labels:
-      - "dependabot"
+      interval: weekly
+    open-pull-requests-limit: 5
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: daily
+      time: "21:00"
+    open-pull-requests-limit: 10
