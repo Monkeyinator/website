@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import * as RNLocalize from 'react-native-localize';
 import { HashRouter, Routes, Route } from "react-router-dom";
 import i18n from './i18n';
 
@@ -15,7 +14,8 @@ function App() {
   useEffect(() => {
     i18n.init({ fallbackLng: "en", });
 
-    const locale = RNLocalize.getLocales()[0].languageCode;
+    const raw = (navigator.languages && navigator.languages.length) ? navigator.languages[0] : (navigator.language || 'en');
+    const locale = String(raw).split('-')[0];
     i18n.changeLanguage(locale);
   }, []);
 

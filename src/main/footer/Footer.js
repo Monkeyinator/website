@@ -20,7 +20,7 @@ function Footer() {
           </svg>
         </div>
       </HashLink>
-      <p className="copyright">© Copyright 2024 Tim All rights reserved</p>
+      <p className="copyright">© Copyright 2025 Tim All rights reserved</p>
       <button className="licenses__button" onClick={handleLicensesButtonClick}>Licenses</button>
     </footer>
   );
