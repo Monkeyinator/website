@@ -15,7 +15,7 @@ jobs:
         uses: gittools/actions/gitversion/setup@v1.1.1
         with:
           versionSpec: "5.x"
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           submodules: true
           fetch-depth: 0
