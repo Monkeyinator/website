@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     i18n.init({ fallbackLng: "en", });
 
-    const raw = (navigator.languages && navigator.languages.length) ? navigator.languages[0] : (navigator.language || 'en');
+    const raw = (navigator.languages?.length) ? navigator.languages[0] : (navigator.language || 'en');
     const locale = String(raw).split('-')[0];
     i18n.changeLanguage(locale);
   }, []);

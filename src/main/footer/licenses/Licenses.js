@@ -31,11 +31,13 @@ export function OpenSourceLicenses() {
 }
 
 function Json2Array(json) {
-  var array = [];
-  var keys = Object.keys(json);
+  let array = [];
+  let keys = Object.keys(json);
+
   keys.forEach(function (key) {
     array.push(json[key]);
   });
+
   return array;
 }
 
