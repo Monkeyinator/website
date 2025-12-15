@@ -5,7 +5,7 @@
   "main": "index.js",
   "homepage": "https://monkeyinator.github.io/website",
   "dependencies": {
-    "i18next": "^23.8.2",
+    "i18next": "^25.7.3",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
     "react-i18next": "^14.0.5",
