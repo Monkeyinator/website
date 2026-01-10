@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dep:gen": "license-checker --production --json --customPath license-checker-custom-format.json  --excludePrivatePackages --out src/licenses.json",
     "lint": "eslint .",
     "preview": "vite preview"
