@@ -1,8 +1,8 @@
-import Hero from './hero/Hero.js';
-import NavigationBar from './navigation_bar/NavigationBar.js';
-import Projects from './projects/Projects.js';
-import Contact from './contact/Contact.js';
-import Footer from './footer/Footer.js';
+import Hero from './hero/Hero.tsx';
+import NavigationBar from './navigation_bar/NavigationBar.tsx';
+import Projects from './projects/Projects.tsx';
+import Contact from './contact/Contact.tsx';
+import Footer from './footer/Footer.tsx';
 
 import './Main.css';
 

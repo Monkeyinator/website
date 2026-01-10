@@ -1,53 +1,41 @@
 {
   "name": "website",
-  "version": "1.0.0",
   "private": true,
-  "main": "index.js",
+  "version": "0.0.0",
+  "type": "module",
   "homepage": "https://monkeyinator.github.io/website",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "deploy": "gh-pages -d build",
+    "dep:gen": "license-checker --production --json --customPath license-checker-custom-format.json  --excludePrivatePackages --out src/licenses.json",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "dependencies": {
-    "i18next": "^23.8.2",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
-    "react-i18next": "^14.0.5",
-    "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^5.1.0"
+    "i18next": "^25.7.4",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "react-i18next": "^16.5.1",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-router-hash-link": "^2.4.9",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
     "gh-pages": "^6.3.0",
+    "globals": "^16.5.0",
     "json-loader": "^0.5.7",
     "license-checker": "^25.0.1",
-    "react-router-dom": "^7.10.1"
-  },
-  "overrides": {
-    "react-refresh": "0.14.0"
-  },
-  "scripts": {
-    "dep:gen": "license-checker --production --json --customPath license-checker-custom-format.json --out src/licenses.json",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-router-dom": "^7.12.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.46.4",
+    "vite": "^7.2.4"
   }
 }

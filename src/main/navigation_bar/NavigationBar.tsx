@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { HashLink } from "react-router-hash-link";
+import { HashLink } from 'react-router-hash-link';
 
 import './NavigationBar.css';
 

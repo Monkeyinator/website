@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route } from "react-router-dom";
-import i18n from './i18n';
+import { useEffect } from 'react';
+import { HashRouter, Routes, Route } from 'react-router-dom';
+import i18n from './i18n.tsx';
 
-import MainView from './main/Main.js';
+import MainView from './main/Main.tsx';
 
-import BingoCreatorPrivacyPolicyView from './main/projects/bingocreator/PrivacyPolicy.js';
-import RedirectToBingoCreatorPrivacyPolicyView from './main/projects/bingocreator/RedirectToPrivacyPolicy.js';
-import ContractReminderPrivacyPolicyView from './main/projects/contractreminder/PrivacyPolicy.js';
-import RedirectToContractReminderPrivacyPolicyView from './main/projects/contractreminder/RedirectToPrivacyPolicy.js';
-import LicensesView from './main/footer/licenses/Licenses.js';
+import BingoCreatorPrivacyPolicyView from './main/projects/bingocreator/PrivacyPolicy.tsx';
+import RedirectToBingoCreatorPrivacyPolicyView from './main/projects/bingocreator/RedirectToPrivacyPolicy.tsx';
+import ContractReminderPrivacyPolicyView from './main/projects/contractreminder/PrivacyPolicy.tsx';
+import RedirectToContractReminderPrivacyPolicyView from './main/projects/contractreminder/RedirectToPrivacyPolicy.tsx';
+import LicensesView from './main/footer/licenses/Licenses.tsx';
 
 function App() {
   useEffect(() => {

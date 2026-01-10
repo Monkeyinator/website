@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useLayoutEffect } from 'react';
 import './Licenses.css';
 
-export function OpenSourceLicenses() {
-  const licenses = require('../../../licenses.json');
+import jsonLicenses from './../../../licenses.json';
 
-  useEffect(() => {
+export function OpenSourceLicenses() {
+  useLayoutEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
@@ -13,8 +13,8 @@ export function OpenSourceLicenses() {
       <div className="licenses">
         <h2 className="licenses__heading licenses__section-heading">Licenses</h2>
       </div>
-      <div className="license__description">
-        {Json2Array(licenses).map((l) => (
+      <div className="license__description" style={{ marginBottom: '5rem' }}>
+        {Json2Array(jsonLicenses).map((l) => (
           <React.Fragment key={l.name + l.version}>
             <p className="license__title">
               <strong>{l.name} {l.version} ({l.licenses})</strong>
@@ -30,11 +30,11 @@ export function OpenSourceLicenses() {
   );
 }
 
-function Json2Array(json) {
-  let array = [];
-  let keys = Object.keys(json);
+function Json2Array(json: Record<string, any>) {
+  const array: any[] = [];
+  const keys = Object.keys(json);
 
-  keys.forEach(function (key) {
+  keys.forEach((key) => {
     array.push(json[key]);
   });
 
