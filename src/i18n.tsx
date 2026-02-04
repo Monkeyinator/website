@@ -6,7 +6,7 @@ const resources = {
     translation: {
       home: 'Home',
       greeting: 'Hello, I\'m ',
-      jobDescription: 'I\'m a full stack developer.',
+      jobDescription: 'I\'m a Manager and Software Engineer.',
       viewMyWork: 'View my work',
       projects: 'Projects',
       casualGameApp: 'Casual game App',
@@ -22,7 +22,7 @@ const resources = {
     translation: {
       home: 'Home',
       greeting: 'Hallo, ich bin ',
-      jobDescription: 'Ich bin ein Full Stack Developer.',
+      jobDescription: 'Ich bin ein Manager und Software Engineer.',
       viewMyWork: 'Meine Arbeit',
       projects: 'Projekte',
       casualGameApp: 'Gelegenheitsspiel-App',
